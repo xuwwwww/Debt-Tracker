@@ -87,19 +87,19 @@ flutter run
 
 ```
 lib/
-??? main.dart                 # Main app file
-??? firebase_options.dart     # Firebase settings
-??? firestore/
-?   ??? firestore.dart        # Database operations
-??? loginAndRegister/         # Login and signup screens
-??? home/                     # Main app screens
-?   ??? home.dart            # Main navigation
-?   ??? event.dart           # Event management
-?   ??? inRoom.dart          # Room details and expenses
-?   ??? settleEvent.dart     # Debt settlement
-?   ??? event/               # Event screens
-?   ??? room/                # Room management screens
-??? images/                  # App images
+   main.dart                 # Main app file
+   firebase_options.dart     # Firebase settings
+   firestore/
+     firestore.dart        # Database operations
+   loginAndRegister/         # Login and signup screens
+   home/                     # Main app screens
+     home.dart            # Main navigation
+     event.dart           # Event management
+     inRoom.dart          # Room details and expenses
+     settleEvent.dart     # Debt settlement
+     event/               # Event screens
+     room/                # Room management screens
+   images/                  # App images
 ```
 
 ## How It Works
