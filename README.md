@@ -1,140 +1,132 @@
 # Debt Tracker
 
-A Flutter-based mobile application for tracking shared expenses and managing debts between friends, roommates, or group members.
+A Flutter mobile app for tracking shared expenses and managing debts between friends, roommates, or group members.
 
-## Features
+## What This App Does
 
-### ? Authentication
-- User registration and login system
-- Secure authentication with Firebase
+### User Accounts
+- Sign up and log in with your account
+- Secure login with Firebase
 - Certificate-based login option
 
-### ? Room Management
-- Create new rooms for different events or groups
+### Room Management
+- Create new rooms for different groups or events
 - Join existing rooms using room keys
-- View room members and their status
-- Leave rooms when no longer needed
+- See who is in each room
+- Leave rooms when you don't need them anymore
 
-### ? Expense Tracking
-- Add expenses with detailed descriptions
+### Expense Tracking
+- Add expenses with descriptions
 - Track who paid for what
-- Record actual amounts vs. paid amounts
-- Real-time updates across all room members
+- Record planned amounts and actual amounts
+- Updates in real-time for all room members
 
-### ? Debt Settlement
-- Automatic calculation of debts between members
-- View detailed breakdown of who owes what to whom
-- Settle debts with a single tap
-- Historical record of all settlements
+### Debt Settlement
+- Automatically calculates debts between members
+- Shows who owes money to whom
+- Settle debts with one tap
+- Keeps history of all settlements
 
-### ? Event Management
-- Create events and associate rooms with them
-- Join multiple events simultaneously
+### Event Management
+- Create events and connect rooms to them
+- Join multiple events at the same time
 - Track expenses across different events
 - Separate settlement for each event
 
-### ? User Experience
-- Modern, intuitive UI with Material Design
-- Pull-to-refresh functionality
-- Loading overlays for better UX
-- Responsive design for different screen sizes
+### User Interface
+- Clean and easy to use design
+- Pull down to refresh data
+- Loading screens for better experience
+- Works on different screen sizes
 
-## Screenshots
+## Technology Used
 
-[Add screenshots here when available]
+- Flutter framework
+- Firebase Firestore database
+- Firebase Authentication
+- Material Design components
+- Google Navigation Bar
+- Line Icons
 
-## Technology Stack
+## How to Set Up
 
-- **Framework**: Flutter
-- **Backend**: Firebase Firestore
-- **Authentication**: Firebase Auth
-- **State Management**: Flutter StatefulWidget
-- **UI Components**: Material Design, Google Nav Bar, Line Icons
-- **Loading**: Loader Overlay, Flutter Spinkit
+### What You Need
 
-## Getting Started
-
-### Prerequisites
-
-- Flutter SDK (>=2.18.5)
+- Flutter SDK (version 2.18.5 or higher)
 - Dart SDK
-- Android Studio / VS Code
-- Firebase project setup
+- Android Studio or VS Code
+- Firebase project
 
-### Installation
+### Installation Steps
 
-1. Clone the repository:
+1. Download the code:
 ```bash
 git clone https://github.com/yourusername/debt-tracker.git
 cd debt-tracker
 ```
 
-2. Install dependencies:
+2. Install packages:
 ```bash
 flutter pub get
 ```
 
-3. Configure Firebase:
+3. Set up Firebase:
    - Create a new Firebase project
    - Add your Android/iOS apps to the project
-   - Download and place the configuration files:
-     - `google-services.json` for Android
-     - `GoogleService-Info.plist` for iOS
-   - Update the Firebase configuration in `lib/firebase_options.dart`
+   - Download and add these files:
+     - google-services.json for Android
+     - GoogleService-Info.plist for iOS
+   - Update the Firebase settings in lib/firebase_options.dart
 
 4. Run the app:
 ```bash
 flutter run
 ```
 
-## Project Structure
+## Project Files
 
 ```
 lib/
-¢u¢w¢w main.dart                 # App entry point
-¢u¢w¢w firebase_options.dart     # Firebase configuration
-¢u¢w¢w firestore/
-¢x   ¢|¢w¢w firestore.dart        # Firestore database operations
-¢u¢w¢w loginAndRegister/         # Authentication screens
-¢u¢w¢w home/                     # Main app screens
-¢x   ¢u¢w¢w home.dart            # Main navigation
-¢x   ¢u¢w¢w event.dart           # Event management
-¢x   ¢u¢w¢w inRoom.dart          # Room details and expense tracking
-¢x   ¢u¢w¢w settleEvent.dart     # Debt settlement
-¢x   ¢u¢w¢w event/               # Event-related screens
-¢x   ¢|¢w¢w room/                # Room management screens
-¢|¢w¢w images/                  # App assets
+??? main.dart                 # Main app file
+??? firebase_options.dart     # Firebase settings
+??? firestore/
+?   ??? firestore.dart        # Database operations
+??? loginAndRegister/         # Login and signup screens
+??? home/                     # Main app screens
+?   ??? home.dart            # Main navigation
+?   ??? event.dart           # Event management
+?   ??? inRoom.dart          # Room details and expenses
+?   ??? settleEvent.dart     # Debt settlement
+?   ??? event/               # Event screens
+?   ??? room/                # Room management screens
+??? images/                  # App images
 ```
 
-## Key Features Explained
+## How It Works
 
-### Room System
-- Each room represents a group of people sharing expenses
+### Rooms
+- Each room is a group of people sharing expenses
 - Rooms have unique keys for joining
 - Members can add expenses and track payments
 
-### Expense Tracking
+### Expenses
 - Users can add expenses with descriptions
-- Track both intended and actual amounts
-- Real-time synchronization across all members
+- Track both planned and actual amounts
+- Updates happen in real-time for all members
 
 ### Debt Settlement
-- Automatic calculation of net debts
+- Automatically calculates net debts
 - Shows who owes money to whom
 - One-tap settlement process
-- Maintains history of settlements
+- Keeps history of settlements
 
-## Contributing
+## How to Help
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. Fork this project
+2. Create a new branch for your changes
+3. Make your changes
+4. Push your changes
+5. Create a Pull Request
 
 ## Version
 
@@ -142,8 +134,8 @@ Current version: 0.18
 
 ## Support
 
-If you encounter any issues or have questions, please open an issue on GitHub.
+If you have problems or questions, please create an issue on GitHub.
 
 ---
 
-Built with ?? using Flutter and Firebase
+Made with Flutter and Firebase
